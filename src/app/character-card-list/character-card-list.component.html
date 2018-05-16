@@ -1,7 +1,12 @@
 <mat-spinner *ngIf="characters.length === 0" class="loading-spinner"></mat-spinner>
 
+<mat-form-field *ngIf="characters.length > 0" class="character-search-input">
+  <mat-icon matSuffix>search</mat-icon>
+  <input matInput placeholder="Search" (input)="filterCharacters($event.target.value)">
+</mat-form-field>
+
 <mat-grid-list [cols]="4" rowHeight="3:1">
-  <mat-grid-tile *ngFor="let character of characters">
+  <mat-grid-tile *ngFor="let character of charactersToDisplay">
     <app-character-card class="character-card" [character]="character"></app-character-card>
   </mat-grid-tile>
 </mat-grid-list>

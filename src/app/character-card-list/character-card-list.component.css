@@ -5,3 +5,8 @@
 .loading-spinner {
   margin: 0 auto;
 }
+
+.character-search-input {
+  margin-left: 75%;
+  width: 20%;
+}
