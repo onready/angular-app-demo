@@ -1,3 +1,7 @@
 .character-card {
   width: 95%;
 }
+
+.loading-spinner {
+  margin: 0 auto;
+}

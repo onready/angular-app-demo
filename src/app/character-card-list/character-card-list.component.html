@@ -1,3 +1,5 @@
+<mat-spinner *ngIf="characters.length === 0" class="loading-spinner"></mat-spinner>
+
 <mat-grid-list [cols]="4" rowHeight="3:1">
   <mat-grid-tile *ngFor="let character of characters">
     <app-character-card class="character-card" [character]="character"></app-character-card>

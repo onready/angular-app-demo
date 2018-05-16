@@ -9,7 +9,7 @@ import { Character } from '../character';
 })
 export class CharacterCardListComponent implements OnInit {
 
-  characters: Character[];
+  characters: Character[] = [];
 
   constructor(private starwarsService: StarwarsService) {
   }
