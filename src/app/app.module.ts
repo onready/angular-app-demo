@@ -7,11 +7,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule, MatToolbarModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { CharacterCardComponent } from './character-card/character-card.component';
+import { CharacterCardListComponent } from './character-card-list/character-card-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    CharacterCardListComponent
   ],
   imports: [
     BrowserModule,
