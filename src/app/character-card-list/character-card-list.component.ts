@@ -16,7 +16,7 @@ export class CharacterCardListComponent implements OnInit {
 
   ngOnInit() {
     this.starwarsService.getCharacters()
-      .subscribe(response => this.characters = response.results);
+      .subscribe(({results}) => this.characters = results);
   }
 
 }
